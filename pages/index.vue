@@ -1,73 +1,46 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        v-portfolio-blog
-      </h1>
-      <h2 class="subtitle">
-        My wicked Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+  <div class="flex items-start flex-wrap">
+    <div class="w-full md:w-1/6">
+      <ul class="list-reset px-4">
+        <li :class="`p-2 my-2 hover:bg-grey-light ${navActiveClasses} rounded cursor-pointer`">one</li>
+        <li class="p-2 my-2 hover:bg-grey-light rounded cursor-pointer">two</li>
+        <li class="p-2 my-2 hover:bg-grey-light rounded cursor-pointer">three</li>
+        <li class="p-2 my-2 hover:bg-grey-light rounded cursor-pointer">four</li>
+      </ul>
+    </div>
+    <div
+      class="w-full md:w-5/6 max-w-xl bg-white rounded p-2 md:p-4 lg:p-8 content-height relative overflow-scroll"
+    >
+      <div class>
+        <h2>helloooooo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum mattis mauris, eu interdum tellus bibendum in. Praesent eu enim nec ex fermentum cursus. Nulla in ligula porta, convallis nulla nec, cursus augue. Vestibulum ac pharetra lorem. Vivamus sem tortor, feugiat eu lacus at, elementum aliquam nisi. Integer sagittis interdum magna ac euismod. In sit amet diam et felis aliquam facilisis.</p>Nam aliquet ipsum vitae libero interdum porttitor. Pellentesque condimentum ullamcorper tellus sit amet pellentesque. Curabitur sem tortor, pharetra auctor sem id, luctus mattis massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse eleifend sem sem, eget molestie augue iaculis eu. In cursus viverra sollicitudin. Proin ultricies libero finibus varius rutrum. Proin sapien arcu, scelerisque rutrum risus sit amet, convallis elementum felis. Cras non feugiat ante. Fusce rutrum tincidunt rhoncus. Phasellus nulla nisi, maximus malesuada risus in, consequat imperdiet velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ac neque condimentum, lacinia lorem quis, ullamcorper sem.
+        <p>Nunc est eros, lacinia a dui quis, posuere consequat risus. Nam eget orci elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean felis dui, varius eu fermentum vitae, rhoncus sed ex. Nullam sem ex, faucibus at lacinia eu, euismod id est. Pellentesque ac ante ultricies, tincidunt est ut, fringilla nulla. Nam eget lacinia nisl. Sed in odio scelerisque, interdum sapien ut, fermentum elit. Aliquam feugiat, mauris eu iaculis malesuada, elit libero bibendum est, at dignissim mi risus a turpis. In hac habitasse platea dictumst. Vivamus et eleifend libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vestibulum, arcu id vehicula efficitur, tellus ante varius quam, non volutpat elit mauris quis augue. Ut eu ligula vestibulum, tincidunt augue non, feugiat massa. Suspendisse potenti.</p>
+        <h2>helloooooo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum mattis mauris, eu interdum tellus bibendum in. Praesent eu enim nec ex fermentum cursus. Nulla in ligula porta, convallis nulla nec, cursus augue. Vestibulum ac pharetra lorem. Vivamus sem tortor, feugiat eu lacus at, elementum aliquam nisi. Integer sagittis interdum magna ac euismod. In sit amet diam et felis aliquam facilisis.</p>Nam aliquet ipsum vitae libero interdum porttitor. Pellentesque condimentum ullamcorper tellus sit amet pellentesque. Curabitur sem tortor, pharetra auctor sem id, luctus mattis massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse eleifend sem sem, eget molestie augue iaculis eu. In cursus viverra sollicitudin. Proin ultricies libero finibus varius rutrum. Proin sapien arcu, scelerisque rutrum risus sit amet, convallis elementum felis. Cras non feugiat ante. Fusce rutrum tincidunt rhoncus. Phasellus nulla nisi, maximus malesuada risus in, consequat imperdiet velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ac neque condimentum, lacinia lorem quis, ullamcorper sem.
+        <p>Nunc est eros, lacinia a dui quis, posuere consequat risus. Nam eget orci elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean felis dui, varius eu fermentum vitae, rhoncus sed ex. Nullam sem ex, faucibus at lacinia eu, euismod id est. Pellentesque ac ante ultricies, tincidunt est ut, fringilla nulla. Nam eget lacinia nisl. Sed in odio scelerisque, interdum sapien ut, fermentum elit. Aliquam feugiat, mauris eu iaculis malesuada, elit libero bibendum est, at dignissim mi risus a turpis. In hac habitasse platea dictumst. Vivamus et eleifend libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vestibulum, arcu id vehicula efficitur, tellus ante varius quam, non volutpat elit mauris quis augue. Ut eu ligula vestibulum, tincidunt augue non, feugiat massa. Suspendisse potenti.</p>
+        <h2>helloooooo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum mattis mauris, eu interdum tellus bibendum in. Praesent eu enim nec ex fermentum cursus. Nulla in ligula porta, convallis nulla nec, cursus augue. Vestibulum ac pharetra lorem. Vivamus sem tortor, feugiat eu lacus at, elementum aliquam nisi. Integer sagittis interdum magna ac euismod. In sit amet diam et felis aliquam facilisis.</p>Nam aliquet ipsum vitae libero interdum porttitor. Pellentesque condimentum ullamcorper tellus sit amet pellentesque. Curabitur sem tortor, pharetra auctor sem id, luctus mattis massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse eleifend sem sem, eget molestie augue iaculis eu. In cursus viverra sollicitudin. Proin ultricies libero finibus varius rutrum. Proin sapien arcu, scelerisque rutrum risus sit amet, convallis elementum felis. Cras non feugiat ante. Fusce rutrum tincidunt rhoncus. Phasellus nulla nisi, maximus malesuada risus in, consequat imperdiet velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ac neque condimentum, lacinia lorem quis, ullamcorper sem.
+        <p>Nunc est eros, lacinia a dui quis, posuere consequat risus. Nam eget orci elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean felis dui, varius eu fermentum vitae, rhoncus sed ex. Nullam sem ex, faucibus at lacinia eu, euismod id est. Pellentesque ac ante ultricies, tincidunt est ut, fringilla nulla. Nam eget lacinia nisl. Sed in odio scelerisque, interdum sapien ut, fermentum elit. Aliquam feugiat, mauris eu iaculis malesuada, elit libero bibendum est, at dignissim mi risus a turpis. In hac habitasse platea dictumst. Vivamus et eleifend libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vestibulum, arcu id vehicula efficitur, tellus ante varius quam, non volutpat elit mauris quis augue. Ut eu ligula vestibulum, tincidunt augue non, feugiat massa. Suspendisse potenti.</p>
+        <h2>helloooooo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum mattis mauris, eu interdum tellus bibendum in. Praesent eu enim nec ex fermentum cursus. Nulla in ligula porta, convallis nulla nec, cursus augue. Vestibulum ac pharetra lorem. Vivamus sem tortor, feugiat eu lacus at, elementum aliquam nisi. Integer sagittis interdum magna ac euismod. In sit amet diam et felis aliquam facilisis.</p>Nam aliquet ipsum vitae libero interdum porttitor. Pellentesque condimentum ullamcorper tellus sit amet pellentesque. Curabitur sem tortor, pharetra auctor sem id, luctus mattis massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse eleifend sem sem, eget molestie augue iaculis eu. In cursus viverra sollicitudin. Proin ultricies libero finibus varius rutrum. Proin sapien arcu, scelerisque rutrum risus sit amet, convallis elementum felis. Cras non feugiat ante. Fusce rutrum tincidunt rhoncus. Phasellus nulla nisi, maximus malesuada risus in, consequat imperdiet velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ac neque condimentum, lacinia lorem quis, ullamcorper sem.
+        <p>Nunc est eros, lacinia a dui quis, posuere consequat risus. Nam eget orci elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean felis dui, varius eu fermentum vitae, rhoncus sed ex. Nullam sem ex, faucibus at lacinia eu, euismod id est. Pellentesque ac ante ultricies, tincidunt est ut, fringilla nulla. Nam eget lacinia nisl. Sed in odio scelerisque, interdum sapien ut, fermentum elit. Aliquam feugiat, mauris eu iaculis malesuada, elit libero bibendum est, at dignissim mi risus a turpis. In hac habitasse platea dictumst. Vivamus et eleifend libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vestibulum, arcu id vehicula efficitur, tellus ante varius quam, non volutpat elit mauris quis augue. Ut eu ligula vestibulum, tincidunt augue non, feugiat massa. Suspendisse potenti.</p>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
+  computed: {
+    navActiveClasses() {
+      return "bg-grey";
+    }
   }
-}
+};
 </script>
 
 <style>
-
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-
-
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.content-height {
+  max-height: 96vh;
 }
 </style>
