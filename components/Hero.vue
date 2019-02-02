@@ -1,12 +1,12 @@
 <template>
   <div class="relative">
     <div class="absolute z-0 flex no-wrap w-full">
-      <div class="w-1/2 h-screen bg-slate-500">1</div>
-      <div class="w-1/2 h-screen bg-peach-500 bg-profile bg-cover">2</div>
+      <div class="w-1/2 h-screen bg-slate-500"></div>
+      <div class="w-1/2 h-screen bg-peach-500 bg-profile bg-cover"></div>
     </div>
     <PageWrapper class="relative z-10 w-full">
       <div class="flex no-wrap">
-        <div class="w-1/2 h-screen">
+        <div class="w-1/2 h-screen flex flex-col justify-center text-white">
           <div>V</div>
           <div>
             <h2>Hey, I’m Verity,</h2>
