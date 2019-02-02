@@ -1,46 +1,24 @@
 <template>
-  <div class="flex items-start flex-wrap">
-    <div class="w-full md:w-1/6">
-      <ul class="list-reset px-4">
-        <li :class="`p-2 my-2 hover:bg-grey-light ${navActiveClasses} rounded cursor-pointer`">one</li>
-        <li class="p-2 my-2 hover:bg-grey-light rounded cursor-pointer">two</li>
-        <li class="p-2 my-2 hover:bg-grey-light rounded cursor-pointer">three</li>
-        <li class="p-2 my-2 hover:bg-grey-light rounded cursor-pointer">four</li>
-      </ul>
-    </div>
-    <div
-      class="w-full md:w-5/6 max-w-xl bg-white rounded p-2 md:p-4 lg:p-8 content-height relative overflow-scroll"
-    >
-      <div class>
-        <h2>helloooooo</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum mattis mauris, eu interdum tellus bibendum in. Praesent eu enim nec ex fermentum cursus. Nulla in ligula porta, convallis nulla nec, cursus augue. Vestibulum ac pharetra lorem. Vivamus sem tortor, feugiat eu lacus at, elementum aliquam nisi. Integer sagittis interdum magna ac euismod. In sit amet diam et felis aliquam facilisis.</p>Nam aliquet ipsum vitae libero interdum porttitor. Pellentesque condimentum ullamcorper tellus sit amet pellentesque. Curabitur sem tortor, pharetra auctor sem id, luctus mattis massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse eleifend sem sem, eget molestie augue iaculis eu. In cursus viverra sollicitudin. Proin ultricies libero finibus varius rutrum. Proin sapien arcu, scelerisque rutrum risus sit amet, convallis elementum felis. Cras non feugiat ante. Fusce rutrum tincidunt rhoncus. Phasellus nulla nisi, maximus malesuada risus in, consequat imperdiet velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ac neque condimentum, lacinia lorem quis, ullamcorper sem.
-        <p>Nunc est eros, lacinia a dui quis, posuere consequat risus. Nam eget orci elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean felis dui, varius eu fermentum vitae, rhoncus sed ex. Nullam sem ex, faucibus at lacinia eu, euismod id est. Pellentesque ac ante ultricies, tincidunt est ut, fringilla nulla. Nam eget lacinia nisl. Sed in odio scelerisque, interdum sapien ut, fermentum elit. Aliquam feugiat, mauris eu iaculis malesuada, elit libero bibendum est, at dignissim mi risus a turpis. In hac habitasse platea dictumst. Vivamus et eleifend libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vestibulum, arcu id vehicula efficitur, tellus ante varius quam, non volutpat elit mauris quis augue. Ut eu ligula vestibulum, tincidunt augue non, feugiat massa. Suspendisse potenti.</p>
-        <h2>helloooooo</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum mattis mauris, eu interdum tellus bibendum in. Praesent eu enim nec ex fermentum cursus. Nulla in ligula porta, convallis nulla nec, cursus augue. Vestibulum ac pharetra lorem. Vivamus sem tortor, feugiat eu lacus at, elementum aliquam nisi. Integer sagittis interdum magna ac euismod. In sit amet diam et felis aliquam facilisis.</p>Nam aliquet ipsum vitae libero interdum porttitor. Pellentesque condimentum ullamcorper tellus sit amet pellentesque. Curabitur sem tortor, pharetra auctor sem id, luctus mattis massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse eleifend sem sem, eget molestie augue iaculis eu. In cursus viverra sollicitudin. Proin ultricies libero finibus varius rutrum. Proin sapien arcu, scelerisque rutrum risus sit amet, convallis elementum felis. Cras non feugiat ante. Fusce rutrum tincidunt rhoncus. Phasellus nulla nisi, maximus malesuada risus in, consequat imperdiet velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ac neque condimentum, lacinia lorem quis, ullamcorper sem.
-        <p>Nunc est eros, lacinia a dui quis, posuere consequat risus. Nam eget orci elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean felis dui, varius eu fermentum vitae, rhoncus sed ex. Nullam sem ex, faucibus at lacinia eu, euismod id est. Pellentesque ac ante ultricies, tincidunt est ut, fringilla nulla. Nam eget lacinia nisl. Sed in odio scelerisque, interdum sapien ut, fermentum elit. Aliquam feugiat, mauris eu iaculis malesuada, elit libero bibendum est, at dignissim mi risus a turpis. In hac habitasse platea dictumst. Vivamus et eleifend libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vestibulum, arcu id vehicula efficitur, tellus ante varius quam, non volutpat elit mauris quis augue. Ut eu ligula vestibulum, tincidunt augue non, feugiat massa. Suspendisse potenti.</p>
-        <h2>helloooooo</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum mattis mauris, eu interdum tellus bibendum in. Praesent eu enim nec ex fermentum cursus. Nulla in ligula porta, convallis nulla nec, cursus augue. Vestibulum ac pharetra lorem. Vivamus sem tortor, feugiat eu lacus at, elementum aliquam nisi. Integer sagittis interdum magna ac euismod. In sit amet diam et felis aliquam facilisis.</p>Nam aliquet ipsum vitae libero interdum porttitor. Pellentesque condimentum ullamcorper tellus sit amet pellentesque. Curabitur sem tortor, pharetra auctor sem id, luctus mattis massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse eleifend sem sem, eget molestie augue iaculis eu. In cursus viverra sollicitudin. Proin ultricies libero finibus varius rutrum. Proin sapien arcu, scelerisque rutrum risus sit amet, convallis elementum felis. Cras non feugiat ante. Fusce rutrum tincidunt rhoncus. Phasellus nulla nisi, maximus malesuada risus in, consequat imperdiet velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ac neque condimentum, lacinia lorem quis, ullamcorper sem.
-        <p>Nunc est eros, lacinia a dui quis, posuere consequat risus. Nam eget orci elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean felis dui, varius eu fermentum vitae, rhoncus sed ex. Nullam sem ex, faucibus at lacinia eu, euismod id est. Pellentesque ac ante ultricies, tincidunt est ut, fringilla nulla. Nam eget lacinia nisl. Sed in odio scelerisque, interdum sapien ut, fermentum elit. Aliquam feugiat, mauris eu iaculis malesuada, elit libero bibendum est, at dignissim mi risus a turpis. In hac habitasse platea dictumst. Vivamus et eleifend libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vestibulum, arcu id vehicula efficitur, tellus ante varius quam, non volutpat elit mauris quis augue. Ut eu ligula vestibulum, tincidunt augue non, feugiat massa. Suspendisse potenti.</p>
-        <h2>helloooooo</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum mattis mauris, eu interdum tellus bibendum in. Praesent eu enim nec ex fermentum cursus. Nulla in ligula porta, convallis nulla nec, cursus augue. Vestibulum ac pharetra lorem. Vivamus sem tortor, feugiat eu lacus at, elementum aliquam nisi. Integer sagittis interdum magna ac euismod. In sit amet diam et felis aliquam facilisis.</p>Nam aliquet ipsum vitae libero interdum porttitor. Pellentesque condimentum ullamcorper tellus sit amet pellentesque. Curabitur sem tortor, pharetra auctor sem id, luctus mattis massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse eleifend sem sem, eget molestie augue iaculis eu. In cursus viverra sollicitudin. Proin ultricies libero finibus varius rutrum. Proin sapien arcu, scelerisque rutrum risus sit amet, convallis elementum felis. Cras non feugiat ante. Fusce rutrum tincidunt rhoncus. Phasellus nulla nisi, maximus malesuada risus in, consequat imperdiet velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ac neque condimentum, lacinia lorem quis, ullamcorper sem.
-        <p>Nunc est eros, lacinia a dui quis, posuere consequat risus. Nam eget orci elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean felis dui, varius eu fermentum vitae, rhoncus sed ex. Nullam sem ex, faucibus at lacinia eu, euismod id est. Pellentesque ac ante ultricies, tincidunt est ut, fringilla nulla. Nam eget lacinia nisl. Sed in odio scelerisque, interdum sapien ut, fermentum elit. Aliquam feugiat, mauris eu iaculis malesuada, elit libero bibendum est, at dignissim mi risus a turpis. In hac habitasse platea dictumst. Vivamus et eleifend libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vestibulum, arcu id vehicula efficitur, tellus ante varius quam, non volutpat elit mauris quis augue. Ut eu ligula vestibulum, tincidunt augue non, feugiat massa. Suspendisse potenti.</p>
-      </div>
+  <div>
+    <ColorPanels class="fixed w-full z-0"></ColorPanels>
+    <div class="relative z-10">
+      <Hero></Hero>
+      <Navigation bg-color="slate"></Navigation>
+      <IntroBlock></IntroBlock>
+      <PageWrapper>
+        <div>
+          <p>Home page</p>
+          <p>home</p>Backrgound panel component (absolute pos)
+          page wrapper
+          grid col
+        </div>
+      </PageWrapper>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  computed: {
-    navActiveClasses() {
-      return "bg-grey";
-    }
-  }
+  layout: "home"
 };
 </script>
-
-<style>
-.content-height {
-  max-height: 96vh;
-}
-</style>

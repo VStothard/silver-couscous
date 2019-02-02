@@ -4,8 +4,9 @@ import NuxtLoading from './components/nuxt-loading.vue'
 import '../assets/css/tailwind.css'
 
 import _6f6c098b from '../layouts/default.vue'
+import _2d2495d5 from '../layouts/home.vue'
 
-const layouts = { "_default": _6f6c098b }
+const layouts = { "_default": _6f6c098b,"_home": _2d2495d5 }
 
 export default {
   head: {"title":"v-portfolio-blog","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"My wicked Nuxt.js project"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
